@@ -53,5 +53,7 @@ Example command:
 python telegram-bot.py --openai_api_key="xxx" --telegram_bot_token="xxx" --file="./subgraphs_faq._question_embed.csv" --topic="The Graph subgraph development"
 ```
 
-# Modify the files to solve your own task and star this repository🙂
+# Modify the files to solve your own task 
+and star this repository🙂
+
 
