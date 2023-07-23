@@ -22,7 +22,6 @@ print(f"Channel ID: {channel_id}")
 print(f"Authorization Key: {authorization_key}")
 
 
-
 def retrieve_messages(channel_id, authorization_key):
     num = 0
     limit = 100
@@ -56,8 +55,6 @@ def retrieve_messages(channel_id, authorization_key):
                     is_reply = True
                     id_reply = value['message_reference']['message_id']
 
-            # try:
-                # Append to the DataFrame
             text = value['content']
             if 'embeds' in value.keys():
                 if len(value['embeds'])>0:
@@ -81,12 +78,10 @@ def retrieve_messages(channel_id, authorization_key):
                 df = df_t.copy()
             else:
                 df = pd.concat([df, df_t], ignore_index=True)
-            # except:
-            #     pass
+
             last_message_id = value['id']
             num = num + 1
-        # if num > 50:
-        #     break
+
         print('number of messages we collected is', num)
 
 

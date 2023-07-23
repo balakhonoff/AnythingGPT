@@ -1,2 +1,4 @@
 pandas==2.0.3
 requests==2.31.0
+python-telegram-bot==13.6.0
+Telethon==1.29.0
